@@ -1,0 +1,20 @@
+body{
+    background-image: url("img/fondo.png");
+}
+
+.firstDiv{
+    display: flex ;
+    background-color: aliceblue;
+    opacity: 50px;
+    padding: 60px;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.firstDiv div{
+    width: 210px;
+    height: 209px;
+    background-color: antiquewhite;
+    margin: 50px;
+    
+}
