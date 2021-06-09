@@ -24,13 +24,14 @@ body {
     flex-direction: row;
     justify-content: space-around;
     background: rgb(139, 134, 134);
+    overflow: hidden;
 }
 
 .text1 {
     display: flex;
     justify-content:flex-start;
     align-items:center;
-    flex-grow: ;
+    
 }
 
 .text2{
@@ -48,15 +49,18 @@ body {
     align-items: center;
 }
 
+/*.filtrar{
+
+}
+*/
 ul{
     list-style: none; 
 }
 
-.nav{
-    display: inline-block;
-}
-
-
+.main-menu ul li:hover ul {
+    display: flex;
+    flex-direction: column;
+  }
 .menuIcon{
     display: none;
     padding: 0.5em;
@@ -67,3 +71,9 @@ ul{
     background-color: slategray;
     color: grey;
 }
+
+
+
+ 
+   
+ 
