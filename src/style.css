@@ -1,18 +1,75 @@
-*{
-    box-sizing: border-box;
-}
 body {
     margin: 0px;
     padding: 0px;
     font-family: Arial, Helvetica, sans-serif;
     background: url(pictures/fondo1.png.jpeg);
+/* Para dejar la imagen de fondo centrada, vertical y horizontalmente */
+    background-position: center center;
+/* Para que la imagen de fondo no se repita */
+    background-repeat: no-repeat;
+/* La imagen se fija en la ventana de visualización para que la altura de la imagen no supere a la del contenido */
+background-attachment: fixed;
+/* La imagen de fondo se reescala automáticamente con el cambio del ancho de ventana del navegador */
+background-size: cover;
+/* Se muestra un color de fondo mientras se está cargando la imagen de fondo o si hay problemas para cargarla */
+    background-color: 	#008080;
+
 }
 .banner {
-    width: 100%;
-    height: 250px;
-    justify-content: center;
-    background:url(pictures/fondo1.png.jpeg);
+    width: auto;
+    min-height: 357px;
+    height: auto;
+    background: url(pictures/Magenta\ and\ Yellow\ Vibrant\ and\ Dynamic\ Business\ Retractable\ Exhibition\ Banner.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
 }
+
+#root{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+
+}
+
+#containerPokemon{
+
+    opacity: 50px;
+    padding: 60px;
+    flex-direction: row;
+    margin: 50px;
+    width: 210px;
+    /*height: 209px;*/
+    background-color:	#4682B4;
+}
+
+.pokedex{
+    margin: 12px;
+    text-align: left;
+    
+}
+
+
+
+/*.firstDiv{
+    display: flex ;
+    opacity: 50px;
+    padding: 60px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: 	#4682B4;
+}*/
+
+/*.firstDiv div{
+    width: 210px;
+    height: 209px;
+    background-color: 	#4682B4;
+    margin: 50px;
+    
+}*/
 
 .searcher{
     width: 80%;
@@ -21,59 +78,59 @@ body {
   /*margin-right:200px;
     margin-top: 100px;*/
     display: flex;
+    align-items: center;
     flex-direction: row;
-    justify-content: space-around;
+    /*justify-content: space-around;¨*/
     background: rgb(139, 134, 134);
     overflow: hidden;
 }
 
-.text1 {
-    display: flex;
-    justify-content:flex-start;
-    align-items:center;
-    
-}
-
-.text2{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.button{
-    width: 54px;
-}
-
-.text3{
-    display: flex;
-    justify-content:flex-end;
-    align-items: center;
-}
-
-/*.filtrar{
-
-}
-*/
-ul{
-    list-style: none; 
-}
-
-.main-menu ul li:hover ul {
-    display: flex;
-    flex-direction: column;
-  }
-.menuIcon{
-    display: none;
-    padding: 0.5em;
+.card-container {
+    position: relative;
     width: 100%;
-}
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  .flip-card:hover .card-container {
+    transform: rotateY(180deg);
+  }
+  
+  .pokemon-block,
+  .pokemon-block-back {
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+  }
+  
+  .pokemon-block-back {
+    transform: rotateY(180deg);
+    position: absolute;
+    top: 0%;
+  }
 
-.menuIcon:hover{
-    background-color: slategray;
-    color: grey;
-}
-
-
-
- 
+  #searchPo{
+      display: flex;
+      flex-direction: row;
+      /*align-self: center;*/
+     /* margin-left: 300px;*/
+      width:300px;
+      height: 20px;
+      /*align-content: center;*/
+      padding: 2px;
+      font-size: 16px;
+      outline: none;
+      border: 1px solid silver;
+      border-radius: 20px;
+      
+   }
    
- 
+  .btn{
+      display: flex;
+      /*align-self:30px ;*/
+      width: 55px;
+      height: 55px;
+      
+  }
