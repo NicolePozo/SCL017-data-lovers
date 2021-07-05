@@ -93,3 +93,4 @@ Tomando en cuenta las opiniones decidimos iterar sobre las siguientes recomendac
 
 
 ## 6. Link a "GO data"
+https://nicolepozo.github.io/SCL017-data-lovers/
